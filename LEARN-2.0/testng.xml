@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GitHubProjectXML">
+  <listeners>
+      <listener class-name ="GitHubProject.Listeners"/>
+  </listeners>
+ <parameter name="URL" value="http://www.google.com"></parameter>
+ <parameter name="APIkey/username" value="258963"></parameter>
+  <test thread-count="5" name="GitHubProjectExecution">
+    <classes>
+      <class name="GitHubProject.Data4Excel"/>
+      <class name="GitHubProject.InvokeApplicationTest"/>
+    </classes>
+   </test>
+ </suite>
+
